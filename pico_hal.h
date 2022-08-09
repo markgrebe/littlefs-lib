@@ -42,6 +42,13 @@ struct pico_fsstat_t {
 // Returns a negative error code on failure.
 int pico_mount(bool format);
 
+// Formats a littlefs
+//
+// Requires a littlefs object and config struct. 
+//
+// Returns a negative error code on failure.
+int pico_format(void);
+
 // Unmounts a littlefs
 //
 // Returns a negative error code on failure.

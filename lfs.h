@@ -76,7 +76,7 @@ enum lfs_error {
     LFS_ERR_NOENT = -3,       // No directory entry
     LFS_ERR_EXIST = -4,       // Entry already exists
     LFS_ERR_NOTDIR = -5,      // Entry is not a dir
-    LFS_ERR_ISDIR = -5,       // Entry is a dir
+    LFS_ERR_ISDIR = -6,       // Entry is a dir
     LFS_ERR_NOTEMPTY = -7,    // Dir is not empty
     LFS_ERR_BADF = -8,        // Bad file number
     LFS_ERR_FBIG = -9,        // File too large

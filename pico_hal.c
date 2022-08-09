@@ -116,6 +116,10 @@ int pico_mount(bool format) {
     return lfs_mount(&pico_cfg);
 }
 
+int pico_format(void) {
+    lfs_format(&pico_cfg);
+}
+
 int pico_open(const char* path, int flags) {
     lfs_file_t* file = lfs_malloc(sizeof(lfs_file_t));
     if (file == NULL)
